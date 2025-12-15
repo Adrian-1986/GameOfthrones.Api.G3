@@ -1,7 +1,3 @@
-
-
-
-
 const requestURL = `https://thronesapi.com/api/v2/Characters`;
 
 function createCharactersCard({ firstName, lastName, imageUrl, title, family}) {
