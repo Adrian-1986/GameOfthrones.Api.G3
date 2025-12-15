@@ -10,8 +10,8 @@ function createCharactersCard({ firstName, lastName, imageUrl, title, family}) {
         <div class="card">
             <img src="${imageUrl}" alt="Pinture of the character">
             <h2>${firstName} ${lastName}</h2>
-            <h2>${family}</h2>
-            <h2>${title}</h2>
+            <h3>${family}</h3>
+            <h3>${title}</h3>
         </div>
     `;
 }
