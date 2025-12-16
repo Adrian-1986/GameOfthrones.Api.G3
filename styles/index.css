@@ -1,47 +1,167 @@
+/* ======================================
+    estilos generales de la pagina
+    estilo inspirado en game of thrones
+====================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: radial-gradient(circle at top, #2a2a30 0, #050509 40%, #000000 100%);
+    color: #ffffff;
+}
+
+/* section que contiene el grid de personajes */
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px 20px 40px;
+}
+
+/* ======================================
+    grid donde se pintan los personajes
+====================================== */
+
 .containerGrid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
+    gap: 18px;
     width: 100%;
-    box-sizing: border-box;
 }
+
+/* ======================================
+    card individual de cada personaje
+====================================== */
 
 .card {
-    background-color: rgb(255, 255, 255);
-    padding: 1rem;
+    background: linear-gradient(to bottom, #1a1a21 0%, #111118 60%, #07070b 100%);
+    border: 1px solid #3f3f44;
     border-radius: 10px;
-    box-sizing: border-box; 
+    padding: 14px;
+    padding-bottom: 18px;
     min-width: 0;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.75);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
+/* pequeno efecto al pasar el raton, como si la carta tuviera mas poder */
+.card:hover {
+    transform: translateY(-4px);
+    border-color: #c9a34a;
+    box-shadow: 0 0 20px rgba(201, 163, 74, 0.45);
+}
+
+/* imagen del personaje, con formato parecido entre todos */
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+}
+
+/* nombre del personaje, en mayusculas y un poco mas epico */
+.card h2 {
+    font-size: 18px;
+    margin: 8px 0 6px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* textos de la familia y el titulo */
+.card h3 {
+    font-size: 14px;
+    margin: 4px 0;
+}
+
+/* familia del personaje, tipo etiqueta oscura */
+.card h3:first-of-type {
+    background-color: #1f1f27;
+    border-radius: 999px;
+    padding: 4px 12px;
+    display: inline-block;
+    border: 1px solid #444444;
+}
+
+/* titulo del personaje, en dorado suave */
+.card h3:last-of-type {
+    color: #f0d68a;
+    font-style: italic;
+}
+
+/* texto que aparece si hay un error o no hay datos */
+.containerGrid p {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: #bbbbbb;
+}
+
+/* ======================================
+    responsive
+====================================== */
+
+/* pantallas grandes un poco mas pequenas */
 @media (max-width: 1200px) {
+    .containerGrid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 
-.containerGrid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-    width: 100%;
-    box-sizing: border-box;
-}
-}
+/* tablets */
 @media (max-width: 900px) {
-
-.containerGrid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    width: 100%;
-    box-sizing: border-box;
-}
+    .containerGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
+/* movil */
 @media (max-width: 600px) {
-
-.containerGrid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    width: 100%;
-    box-sizing: border-box;
+    .containerGrid {
+        grid-template-columns: 1fr;
+    }
 }
+
+/* ======================================
+    estilos preparados para las casas
+    se usaran cuando se añadan desde js
+====================================== */
+
+/* stark, tonos frios tipo norte */
+.card.house-stark {
+    border-color: #9fc5e8;
+}
+
+/* lannister, rojo y dorado */
+.card.house-lannister {
+    border-color: #b30000;
+}
+
+/* targaryen, rojo oscuro y fuego */
+.card.house-targaryen {
+    border-color: #a3002a;
+}
+
+/* baratheon, amarillo fuerte */
+.card.house-baratheon {
+    border-color: #e6c300;
+}
+
+/* greyjoy, gris y mar oscuro */
+.card.house-greyjoy {
+    border-color: #777777;
+}
+
+/* martell, naranja calido */
+.card.house-martell {
+    border-color: #ff8c42;
+}
+
+/* tyrell, verde casa noble */
+.card.house-tyrell {
+    border-color: #4caf50;
 }
