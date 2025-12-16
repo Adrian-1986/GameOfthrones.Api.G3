@@ -16,9 +16,16 @@ function createStarkCard({ firstName, lastName, imageUrl, title, family}) {
     return `
         <div class="card house-stark">
             <img src="${imageUrl}" alt="Pinture of the character">
-            <h2>${firstName} ${lastName}</h2>
-            <h3>${family}</h3>
-            <h3>${title}</h3>
+            <div class="stark-info">
+                <div class="stark-text">
+                    <h2>${firstName} ${lastName}</h2>
+                    <h3>${family}</h3>
+                    <h3>${title}</h3>
+                </div>
+                <div class="stark-sigil-container">
+                    <img class="stark-sigil" src="./assets/img/houseStark.png" alt="House Stark Sigil" class="stark-sigil">
+                </div>
+            </div>
         </div>
     `;
 }
