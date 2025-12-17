@@ -35,7 +35,7 @@ Se ha desarrollado siguiendo principios de **Clean Code**, una correcta **organi
 ### Endpoint principal
 ```text
 /v2/Characters
-
+---
 ## ⚙️ Funcionalidades
 
 - Obtención de datos desde una API REST
@@ -52,8 +52,8 @@ Se ha desarrollado siguiendo principios de **Clean Code**, una correcta **organi
   - `<main>`
   - `<footer>`
 
-
-📁 Estructura del proyecto
+---
+##📁 Estructura del proyecto
 GameOfthrones.Api.G3/
 │
 ├── index.html
@@ -71,7 +71,8 @@ GameOfthrones.Api.G3/
 
 La estructura está pensada para facilitar la escalabilidad, el mantenimiento y el trabajo en equipo.
 
-🚀 Instalación y ejecución
+---
+##🚀 Instalación y ejecución
 1️⃣ Clonar el repositorio
 git clone https://github.com/Adrian-1986/GameOfthrones.Api.G3.git
 
@@ -85,8 +86,8 @@ Abrir index.html con Live Server
 O abrir directamente el archivo en el navegador
 
 ⚠️ No se requieren dependencias adicionales.
-
-🔄 Flujo de trabajo en Git
+---
+##🔄 Flujo de trabajo en Git
 
 El equipo ha seguido un flujo basado en ramas:
 
@@ -105,8 +106,8 @@ Desarrollar la funcionalidad asignada
 Integrar los cambios en dev
 
 Resolver conflictos si fuese necesario
-
-👥 Equipo de desarrollo
+---
+##👥 Equipo de desarrollo
 
 Equipo 3 – JM Factoria
 
@@ -119,8 +120,8 @@ Comunicación en equipo
 Control de versiones
 
 Integración continua
-
-⚖️ Consideraciones legales
+---
+##⚖️ Consideraciones legales
 
 Este proyecto se ha desarrollado exclusivamente con fines educativos.
 
