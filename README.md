@@ -4,7 +4,8 @@ Proyecto académico desarrollado por el Equipo 3 en el marco de la formación de
 La aplicación muestra los personajes del universo Game of Thrones, así como sus principales características, respetando una estética coherente con la ambientación de la serie.
 
 
-<img width="735" height="406" alt="image" src="https://github.com/user-attachments/assets/6fd5a8f0-2279-480b-a4f0-f6fcf7acc4ed" />
+![IMAGEN LOGO](images/logo.jpg)
+
 
 
 ## 📋 Índice
@@ -28,6 +29,8 @@ La aplicación muestra los personajes del universo Game of Thrones, así como su
 Este proyecto consiste en una aplicación web que consume datos de la Thrones API para mostrar información detallada sobre los personajes del universo de Game of Thrones.
 
 Se ha desarrollado siguiendo principios de Clean Code, una correcta organización por carpetas y control de versiones con Git, trabajando en equipo mediante ramas independientes y una rama dev como punto de integración.
+
+![IMAGEN FRONT](images/captureFront.png)
 
 ## 🛠 Tecnologías utilizadas
 HTML5 — Estructura semántica del sitio
