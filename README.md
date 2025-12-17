@@ -36,33 +36,22 @@ Se ha desarrollado siguiendo principios de **Clean Code**, una correcta **organi
 ```text
 /v2/Characters
 
-⚙️ Funcionalidades
+## ⚙️ Funcionalidades
 
-Obtención de datos desde una API REST
+- Obtención de datos desde una API REST
+- Renderizado dinámico de personajes
+- Visualización de:
+  - Nombre completo
+  - Casa
+  - Título
+  - Imagen
+  - Información adicional proporcionada por la API
+- Diseño visual acorde al universo *Game of Thrones*
+- Estructura semántica con:
+  - `<header>`
+  - `<main>`
+  - `<footer>`
 
-Renderizado dinámico de personajes
-
-Visualización de:
-
-Nombre completo
-
-Casa
-
-Título
-
-Imagen
-
-Información adicional proporcionada por la API
-
-Diseño visual acorde al universo Game of Thrones
-
-Estructura semántica con:
-
-<header>
-
-<main>
-
-<footer>
 
 📁 Estructura del proyecto
 GameOfthrones.Api.G3/
