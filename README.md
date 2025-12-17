@@ -97,3 +97,44 @@ O abrir directamente el archivo en el navegador
 
 ⚠️ No se requieren dependencias adicionales.
 
+🔄 Flujo de trabajo en Git
+
+El equipo ha seguido un flujo basado en ramas:
+
+main → rama estable
+
+dev → rama de integración
+
+feature/* y fix/* → ramas de desarrollo
+
+Proceso habitual
+
+Crear una rama desde dev
+
+Desarrollar la funcionalidad asignada
+
+Integrar los cambios en dev
+
+Resolver conflictos si fuese necesario
+
+👥 Equipo de desarrollo
+
+Equipo 3 – JM Factoria
+
+Proyecto realizado de forma colaborativa, fomentando:
+
+Buenas prácticas
+
+Comunicación en equipo
+
+Control de versiones
+
+Integración continua
+
+⚖️ Consideraciones legales
+
+Este proyecto se ha desarrollado exclusivamente con fines educativos.
+
+Game of Thrones, sus personajes, imágenes y nombres son propiedad de HBO® y George R. R. Martin.
+El equipo no reclama ningún derecho sobre el contenido original.
+
