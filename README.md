@@ -4,7 +4,8 @@ Proyecto académico desarrollado por el **Equipo 3** en el marco de la formació
 
 La aplicación muestra los personajes del universo **Game of Thrones**, así como sus principales características, respetando una estética coherente con la ambientación de la serie.
 
-![Vista general del proyecto](assets/images/readme/home.png)
+<img width="735" height="406" alt="image" src="https://github.com/user-attachments/assets/6fd5a8f0-2279-480b-a4f0-f6fcf7acc4ed" />
+
 
 ---
 
@@ -33,7 +34,7 @@ Se ha desarrollado siguiendo principios de **Clean Code**, una correcta **organi
 🔗 https://thronesapi.com/
 
 ### Endpoint principal
-```text
+
 /v2/Characters
 ---
 ## ⚙️ Funcionalidades
@@ -52,8 +53,7 @@ Se ha desarrollado siguiendo principios de **Clean Code**, una correcta **organi
   - `<main>`
   - `<footer>`
 
----
-##📁 Estructura del proyecto
+📁 Estructura del proyecto
 GameOfthrones.Api.G3/
 │
 ├── index.html
@@ -69,62 +69,83 @@ GameOfthrones.Api.G3/
     └── images/
 
 
-La estructura está pensada para facilitar la escalabilidad, el mantenimiento y el trabajo en equipo.
+La estructura del proyecto está diseñada para facilitar la escalabilidad, el mantenimiento del código y el trabajo colaborativo en equipo, siguiendo buenas prácticas de organización y separación de responsabilidades.
 
----
-##🚀 Instalación y ejecución
-1️⃣ Clonar el repositorio
+🚀 Instalación y ejecución
+
+1️⃣ Clonar el repositorio:
+
 git clone https://github.com/Adrian-1986/GameOfthrones.Api.G3.git
 
-2️⃣ Acceder al proyecto
+
+2️⃣ Acceder al directorio del proyecto:
+
 cd GameOfthrones.Api.G3
 
-3️⃣ Ejecutar el proyecto
 
-Abrir index.html con Live Server
+3️⃣ Ejecutar la aplicación:
 
-O abrir directamente el archivo en el navegador
+Abrir el archivo index.html utilizando Live Server
 
-⚠️ No se requieren dependencias adicionales.
----
-##🔄 Flujo de trabajo en Git
+O abrir directamente el archivo en el navegador web
 
-El equipo ha seguido un flujo basado en ramas:
+⚠️ No se requieren dependencias adicionales para su ejecución.
+
+🔄 Flujo de trabajo en Git
+
+Para el desarrollo de este proyecto se ha reutilizado la estructura base y algunos patrones de un proyecto anterior (“El Mundo de Tinta”), adaptándolos al nuevo dominio y a los requisitos específicos de la Thrones API.
+
+Elementos mantenidos:
+
+Organización modular de carpetas
+
+Patrón de consumo de API mediante fetch
+
+Creación dinámica de tarjetas de contenido con JavaScript
+
+Elementos adaptados:
+
+Nombres de variables y funciones
+
+Campos y estructura del JSON recibido desde la API
+
+Estética visual ajustada al universo de Game of Thrones
+
+Estrategia de ramas:
 
 main → rama estable
 
 dev → rama de integración
 
-feature/* y fix/* → ramas de desarrollo
+feature/* y fix/* → ramas de desarrollo individual
 
-Proceso habitual
+Proceso de trabajo habitual:
 
-Crear una rama desde dev
+Creación de una rama desde dev
 
-Desarrollar la funcionalidad asignada
+Desarrollo de la funcionalidad asignada
 
-Integrar los cambios en dev
+Integración de cambios en dev
 
-Resolver conflictos si fuese necesario
----
-##👥 Equipo de desarrollo
+Resolución de conflictos si fuese necesario
+
+👥 Equipo de desarrollo
 
 Equipo 3 – JM Factoria
 
 Proyecto realizado de forma colaborativa, fomentando:
 
-Buenas prácticas
+Buenas prácticas de desarrollo
 
-Comunicación en equipo
+Comunicación efectiva en equipo
 
-Control de versiones
+Control de versiones con Git
 
-Integración continua
----
-##⚖️ Consideraciones legales
+Integración continua de funcionalidades
+
+⚖️ Consideraciones legales
 
 Este proyecto se ha desarrollado exclusivamente con fines educativos.
 
-Game of Thrones, sus personajes, imágenes y nombres son propiedad de HBO® y George R. R. Martin.
-El equipo no reclama ningún derecho sobre el contenido original.
-
+Game of Thrones, sus personajes, imágenes y nombres son propiedad de HBO® y
+George R. R. Martin. El equipo no reclama ningún derecho sobre el contenido original.
