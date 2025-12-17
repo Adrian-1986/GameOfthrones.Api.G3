@@ -16,3 +16,23 @@ Se ha desarrollado siguiendo principios de **Clean Code**, una correcta **organi
 
 ---
 
+## 🛠 Tecnologías utilizadas
+
+- **HTML5** — Estructura semántica del sitio
+- **CSS3** — Estilos y maquetación (Flexbox / Grid)
+- **JavaScript (ES6)** — Consumo de la API y manipulación del DOM
+- **JSON** — Formato de intercambio de datos
+- **Git & GitHub** — Control de versiones y trabajo colaborativo
+- **Live Server** — Entorno de desarrollo local
+
+---
+
+## 🌐 API utilizada
+
+**Thrones API**  
+🔗 https://thronesapi.com/
+
+### Endpoint principal
+```text
+/v2/Characters
+
