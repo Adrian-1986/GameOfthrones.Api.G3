@@ -64,3 +64,36 @@ Estructura semántica con:
 
 <footer>
 
+📁 Estructura del proyecto
+GameOfthrones.Api.G3/
+│
+├── index.html
+├── README.md
+│
+├── styles/
+│   └── index.css
+│
+├── js/
+│   └── index.js
+│
+└── assets/
+    └── images/
+
+
+La estructura está pensada para facilitar la escalabilidad, el mantenimiento y el trabajo en equipo.
+
+🚀 Instalación y ejecución
+1️⃣ Clonar el repositorio
+git clone https://github.com/Adrian-1986/GameOfthrones.Api.G3.git
+
+2️⃣ Acceder al proyecto
+cd GameOfthrones.Api.G3
+
+3️⃣ Ejecutar el proyecto
+
+Abrir index.html con Live Server
+
+O abrir directamente el archivo en el navegador
+
+⚠️ No se requieren dependencias adicionales.
+
