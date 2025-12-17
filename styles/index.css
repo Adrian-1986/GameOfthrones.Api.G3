@@ -165,3 +165,16 @@ section {
 .card.house-tyrell {
     border-color: #4caf50;
 }
+
+footer {
+    width: 100%;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
