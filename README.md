@@ -4,7 +4,8 @@ Proyecto académico desarrollado por el Equipo 3 en el marco de la formación de
 La aplicación muestra los personajes del universo Game of Thrones, así como sus principales características, respetando una estética coherente con la ambientación de la serie.
 
 
-![IMAGEN LOGO](headerImg.png)
+![IMAGEN LOGO](./images/headerImg.png) 
+
 
 
 
