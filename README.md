@@ -157,7 +157,17 @@ Proceso de trabajo habitual:
 
 
 ## 👥 Equipo de desarrollo
-Equipo 3 – JM Factoria
+Equipo 3 – JM Factoria:
+
+-Adrián Baeza
+
+-Facundo Garavagalia
+
+-Alba Ganduxé
+
+-Noa-Li Vilchez
+
+-Ana Morandeira
 
 Proyecto realizado de forma colaborativa, fomentando:
 
