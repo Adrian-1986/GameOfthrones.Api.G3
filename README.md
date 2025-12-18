@@ -56,6 +56,13 @@ Endpoints principales:
 
 /api/v2/Continents
 
+### 🧹 Limpieza de datos
+
+Durante el consumo de la API se detectó que el personaje **Robert Baratheon** aparecía duplicado en la respuesta del endpoint `/v2/Characters`.
+
+Para evitar mostrar información redundante en la aplicación, se decidió **ocultar una de las entradas duplicadas**, manteniendo únicamente una representación del personaje en la interfaz.
+
+
 ![IMAGEN API](images/CaptureApi.png)
 
 ## ⚙️ Funcionalidades
