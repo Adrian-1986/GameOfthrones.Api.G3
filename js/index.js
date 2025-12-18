@@ -10,7 +10,7 @@ function createCharactersCard({ firstName, lastName, imageUrl, title, family}) {
             <h3>${title}</h3>
         </div>
     `;
-}
+}it fet
 
 async function fetchThroneJson() {
     try {

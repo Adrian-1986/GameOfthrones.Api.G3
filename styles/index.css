@@ -16,8 +16,6 @@ body {
 
 /* section que contiene el grid de personajes */
 section {
-    max-width: 1200px;
-    margin: 0 auto;
     padding: 24px 20px 40px;
 }
 
@@ -177,4 +175,9 @@ footer {
     max-width: 1200px;
     margin: 0 auto;
     padding: 10px;
+}
+
+.footer-section,
+.footer-bottom {
+    text-align: center;
 }
