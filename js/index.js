@@ -107,7 +107,6 @@ async function displayContinentsThrone() {
 
 displayContinentsThrone();
 
-comentario
 async function displayCharactersThrone() {
     const charactersSection = document.getElementById('throneCharactersSection');
     const charactersData = await fetchCharactersThroneJson();
@@ -118,7 +117,6 @@ async function displayCharactersThrone() {
         charactersSection.innerHTML = '<p>No hemos podido entrar en Invernalia.</p>';
     }
 }
-comentario
 
 displayCharactersThrone();
 
