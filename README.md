@@ -52,6 +52,8 @@ Thrones API
 Endpoint principal
 /v2/Characters
 
+![IMAGEN API](images/CaptureApi.png)
+
 ## ⚙️ Funcionalidades
 Obtención de datos desde una API REST
 
