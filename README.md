@@ -73,13 +73,6 @@ Renderizado dinámico de personajes
 
  -Diseño visual acorde al universo Game of Thrones
 
- -Estructura semántica con:
-
-   --header
-
-   --main
-
-   --footer
 
    ![IMAGEN LOGO](images/Cards.gif)
 
