@@ -189,6 +189,10 @@ section {
     border-color: #4caf50;
 }
 
+.card.house-bolton {
+    border-color: #97eb9a;
+}
+
 footer {
     width: 100%;
 }
