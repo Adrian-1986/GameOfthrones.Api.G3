@@ -23,7 +23,33 @@ function createratBaheonCard({ firstName, lastName, imageUrl, title, family}) {
     `;
 }
 
-async function fetchThroneJson() {
+function createStarkCard({ firstName, lastName, imageUrl, title, family}) {
+    return `
+        <div class="card house-stark">
+            <img src="${imageUrl}" alt="Pinture of the character">
+            <div class="stark-info">
+                <div class="stark-text">
+                    <h2>${firstName} ${lastName}</h2>
+                    <h3>${family}</h3>
+                    <h3>${title}</h3>
+                </div>
+                <div class="stark-sigil-container">
+                    <img class="stark-sigil" src="./assets/img/houseStark.png" alt="House Stark Sigil" class="stark-sigil">
+                </div>
+            </div>
+        </div>
+    `;
+}
+
+function createContinentsCard({name}) {
+    return `
+        <div class="card">
+            <h2>${name}</h2>
+        </div>
+    `;
+}
+
+async function fetchCharactersThroneJson() {
     try {
         const response = await fetch(requestURL);
         if (!response.ok) {
@@ -48,30 +74,3 @@ async function displayThrone() {
 }
 
 displayThrone();
-
-async function displayBaheon() {
-    const baheonSection = document.getElementById('BaheonSection');
-    const BaheonData = await fetchThroneJson();
-    if (BaheonData ) {
-        const baratheonCharacters = BaheonData.filter(character => character.family === 'House Baratheon');
-        const BaheonCards = baratheonCharacters.map(createratBaheonCard).join('');
-        baheonSection.innerHTML = BaheonCards;
-    } else {
-        baheonSection.innerHTML = '<p>No hemos podido entrar en Invernalia.</p>';
-    }
-}
-
-displayBaheon();
-
-async function displayGreyjoy() {
-    const  GreyjoySection = document.getElementById('GreyjoySection');
-    const  GreyjoyData = await fetchGreyjoyJson();
-    if ( GreyjoyData ) {
-        const  greyjoyCharacters =  GreyjoyData.filter(character => character.family === 'House Greyjoy');
-        const  greyjoyCards =  greyjoyCharacters.map(createGreyjoyCard).join('');
-        GreyjoySection.innerHTML =  greyjoyCards;
-    } else {
-        GreyjoySection.innerHTML = '<p>No hemos podido entrar en Invernalia.</p>';
-    }
-}
-displayGreyjoy();
