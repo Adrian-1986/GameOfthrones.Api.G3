@@ -16,8 +16,6 @@ body {
 
 /* section que contiene el grid de personajes */
 section {
-    max-width: 1200px;
-    margin: 0 auto;
     padding: 24px 20px 40px;
 }
 
@@ -30,6 +28,7 @@ section {
     grid-template-columns: repeat(4, 1fr);
     gap: 18px;
     width: 100%;
+    margin-bottom: 40px;
 }
 
 /* ======================================
@@ -99,6 +98,27 @@ section {
     grid-column: 1 / -1;
     text-align: center;
     color: #bbbbbb;
+}
+
+.card .stark-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card .stark-text {
+    max-width: 65%;
+}
+
+.card .stark-sigil-container {
+    max-width: 30%;
+}
+
+.card .stark-sigil {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 /* ======================================
@@ -177,4 +197,9 @@ footer {
     max-width: 1200px;
     margin: 0 auto;
     padding: 10px;
+}
+
+.footer-section,
+.footer-bottom {
+    text-align: center;
 }
