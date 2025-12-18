@@ -212,14 +212,16 @@ async function displayAllHousesThrone() {
     const AllHousesSection = document.getElementById('allHousesSection');
     const characterData = await fetchCharactersThroneJson();
     if (characterData) {
-        const lannisterCharacters = characterData.filter(character => character.family === 'House Lannister' || character.family === 'House Lanister' || character.family === 'Lanister' || character.family === 'Lannister');
-        const starkCharacters = characterData.filter(character => character.family === 'House Stark'|| character.family === 'Stark');
-        const boltonCharacters = characterData.filter(character => character.family === 'House Bolton'|| character.family === 'Bolton');
-        const mormontCharacters = characterData.filter(character => character.family === 'House Mormont'|| character.family === 'Mormont');
-        const tyrellCharacters = characterData.filter(character => character.family === 'House Tyrell'|| character.family === 'Tyrell');
-        const baratheonCharacters = characterData.filter(character => character.family === 'House Baratheon' || character.family === 'Baratheon');
-        const greyjoyCharacters = characterData.filter(character => character.family === 'House Greyjoy' || character.family === 'Greyjoy');
-        const targaryenCharacters = characterData.filter(character => character.family === 'House Targaryen' || character.family === 'Targaryan'|| character.family === 'Targaryan');
+        const hiddenId = 7;
+        const visibleCharacters = characterData.filter(character => character.id !== hiddenId);
+        const lannisterCharacters = visibleCharacters.filter(character => character.family === 'House Lannister' || character.family === 'House Lanister' || character.family === 'Lanister' || character.family === 'Lannister');
+        const starkCharacters = visibleCharacters.filter(character => character.family === 'House Stark'|| character.family === 'Stark');
+        const boltonCharacters = visibleCharacters.filter(character => character.family === 'House Bolton'|| character.family === 'Bolton');
+        const mormontCharacters = visibleCharacters.filter(character => character.family === 'House Mormont'|| character.family === 'Mormont');
+        const tyrellCharacters = visibleCharacters.filter(character => character.family === 'House Tyrell'|| character.family === 'Tyrell');
+        const baratheonCharacters = visibleCharacters.filter(character => character.family === 'House Baratheon' || character.family === 'Baratheon');
+        const greyjoyCharacters = visibleCharacters.filter(character => character.family === 'House Greyjoy' || character.family === 'Greyjoy');
+        const targaryenCharacters = visibleCharacters.filter(character => character.family === 'House Targaryen' || character.family === 'Targaryan'|| character.family === 'Targaryan');
         const usedFamilies = ['House Greyjoy', 'Greyjoy','House Targaryen','House Targaryan', 'Targaryan','House Lannister', 'Lannister', 'House Lanister', 'Lanister', 'House Stark', 'Stark', 'House Bolton', 'Bolton', 'House Mormont', 'Mormont', 'House Tyrell', 'Tyrell', 'House Baratheon', 'Baratheon'];
         const othersHouses = characterData.filter(character => !usedFamilies.includes(character.family));
         const baratheonCards = baratheonCharacters.map(createBaratheonCard).join('');
