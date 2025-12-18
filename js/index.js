@@ -10,16 +10,6 @@ function createCharactersCard({ firstName, lastName, imageUrl, title, family}) {
             <h3>${title}</h3>
         </div>
     `;
-}it fet
-
-    return `
-        <div class="card house-baratheon">
-            <img src="${imageUrl}" alt="Pinture of the character">
-            <h2>${firstName} ${lastName}</h2>
-            <h3>${family}</h3>
-            <h3>${title}</h3>
-        </div>
-    `;
 }
 
 function createStarkCard({ firstName, lastName, imageUrl, title, family}) {
