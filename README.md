@@ -97,12 +97,13 @@ La estructura del proyecto está diseñada para facilitar la escalabilidad, el m
 
 1️⃣ Clonar el repositorio:
 
-bash
 git clone https://github.com/Adrian-1986/GameOfthrones.Api.G3.git
+
 2️⃣ Acceder al directorio del proyecto:
 
 bash
 cd GameOfthrones.Api.G3
+
 3️⃣ Ejecutar la aplicación:
 
 Abrir el archivo index.html utilizando Live Server
@@ -114,6 +115,7 @@ O abrir directamente el archivo en el navegador web
 ## 🔄 Flujo de trabajo en Git
 Para el desarrollo de este proyecto se ha reutilizado la estructura base y algunos patrones de un proyecto anterior ("El Mundo de Tinta"), adaptándolos al nuevo dominio y a los requisitos específicos de la Thrones API.
 
+
 Elementos mantenidos:
 
 -Organización modular de carpetas
@@ -121,6 +123,7 @@ Elementos mantenidos:
 -Patrón de consumo de API mediante fetch
 
 -Creación dinámica de tarjetas de contenido con JavaScript
+
 
 
 Elementos adaptados:
@@ -138,6 +141,7 @@ Estrategia de ramas:
  -dev → rama de integración
 
  -feature/* y fix/* → ramas de desarrollo individual
+ 
 
 
 Proceso de trabajo habitual:
@@ -149,6 +153,8 @@ Proceso de trabajo habitual:
 -Integración de cambios en dev
 
 -Resolución de conflictos si fuese necesario
+
+
 
 ## 👥 Equipo de desarrollo
 Equipo 3 – JM Factoria
