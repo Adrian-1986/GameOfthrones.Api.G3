@@ -16,6 +16,8 @@ body {
 
 /* section que contiene el grid de personajes */
 section {
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 24px 20px 40px;
 }
 
@@ -48,6 +50,7 @@ section {
 
 /* pequeno efecto al pasar el raton, como si la carta tuviera mas poder */
 .card:hover {
+    z-index: 1;
     transform: translateY(-4px);
     border-color: #c9a34a;
     box-shadow: 0 0 20px rgba(201, 163, 74, 0.45);
