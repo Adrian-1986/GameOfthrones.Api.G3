@@ -85,10 +85,22 @@ async function fetchContinentsThroneJson() {
 }
 
 
+async function fetchUrlFromAPI(url) {
+    try {
+        const response = await fetch(url);
+        if (!response.ok) {
+            throw new Error(`Error de la solucitud: ${response.status}`);
+        }
+        return await response.json();
+    } catch (error) {
+        console.error('Error al obtener el archivo JSON:', error);
+        return null;
+    }
+}
 
 async function displayContinentsThrone() {
     const continentsSection = document.getElementById('throneContinentsSection');
-    const continentsData = await fetchContinentsThroneJson();
+    const continentsData = await fetchUrlFromAPI(`https://thronesapi.com/api/v2/Continents`);
     if (continentsData ) {
         const continentsCards = continentsData.map(createContinentsCard).join('');
         continentsSection.innerHTML = continentsCards;
