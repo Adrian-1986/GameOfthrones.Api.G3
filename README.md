@@ -49,8 +49,11 @@ Live Server — Entorno de desarrollo local
 Thrones API
 🔗 https://thronesapi.com/
 
-Endpoint principal
+Endpoints principales:
+
 /v2/Characters
+
+/api/v2/Continents
 
 ![IMAGEN API](images/CaptureApi.png)
 
