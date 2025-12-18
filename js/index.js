@@ -22,23 +22,6 @@ function createratBaheonCard({ firstName, lastName, imageUrl, title, family}) {
         </div>
     `;
 }
-function createStarkCard({ firstName, lastName, imageUrl, title, family}) {
-    return `
-        <div class="card house-stark">
-            <img src="${imageUrl}" alt="Pinture of the character">
-            <div class="stark-info">
-                <div class="stark-text">
-                    <h2>${firstName} ${lastName}</h2>
-                    <h3>${family}</h3>
-                    <h3>${title}</h3>
-                </div>
-                <div class="stark-sigil-container">
-                    <img class="stark-sigil" src="./assets/img/houseStark.png" alt="House Stark Sigil" class="stark-sigil">
-                </div>
-            </div>
-        </div>
-    `;
-}
 
 function createStarkCard({ firstName, lastName, imageUrl, title, family}) {
     return `
@@ -98,24 +81,9 @@ async function fetchCharactersThroneJson() {
 }
 
 
-
 async function fetchContinentsThroneJson() {
     try {
         const response = await fetch(requestContinentsURL);
-        if (!response.ok) {
-            throw new Error(`Error de la solucitud: ${response.status}`);
-        }
-        return await response.json();
-    } catch (error) {
-        console.error('Error al obtener el archivo JSON:', error);
-        return null;
-    }
-}
-
-
-async function fetchUrlFromAPI(url) {
-    try {
-        const response = await fetch(url);
         if (!response.ok) {
             throw new Error(`Error de la solucitud: ${response.status}`);
         }
@@ -139,6 +107,7 @@ async function displayContinentsThrone() {
 
 displayContinentsThrone();
 
+comentario
 async function displayCharactersThrone() {
     const charactersSection = document.getElementById('throneCharactersSection');
     const charactersData = await fetchCharactersThroneJson();
@@ -149,6 +118,7 @@ async function displayCharactersThrone() {
         charactersSection.innerHTML = '<p>No hemos podido entrar en Invernalia.</p>';
     }
 }
+comentario
 
 displayCharactersThrone();
 
