@@ -1,15 +1,15 @@
 const requestCharactersURL = `https://thronesapi.com/api/v2/Characters`;
 const requestContinentsURL = `https://thronesapi.com/api/v2/Continents`;
 
-function createStarkCard({ firstName, lastName, imageUrl, title, family}) {
+function createStarkCard({ fullName, imageUrl, title, family}) {
     return `
-        <div class="card house-stark">
+        <div id="house-stark" class="card house-stark">
                     <img src="${imageUrl}" alt="Pinture of the character">
             <div class="stark-info">
                 <div class="stark-text">
-                    <h2>${firstName} ${lastName}</h2>
-                    <h3>${family}</h3>
-                    <h3>${title}</h3>
+                    <h2>${fullName}</h2>
+                    <h3>${family != 'None' && family != '' ? family : 'Unknown'}</h3>
+                    <h3>${title ? title : 'Unknown'}</h3>
                 </div>
                 <div class="stark-sigil-container">
                     <img class="stark-sigil" src="./assets/img/houseStark.png" alt="House Stark Sigil" class="stark-sigil">
@@ -19,15 +19,15 @@ function createStarkCard({ firstName, lastName, imageUrl, title, family}) {
     `;
 }
 
-function createTargaryenCard({ firstName, lastName, imageUrl, title, family}) {
+function createTargaryenCard({ fullName, imageUrl, title, family}) {
     return `
-        <div class="card house-targaryen">
+        <div id="house-targaryen" class="card house-targaryen">
             <img src="${imageUrl}" alt="Pinture of the character">
             <div class="stark-info">
                 <div class="stark-text">
-                    <h2>${firstName} ${lastName}</h2>
-                    <h3>${family}</h3>
-                    <h3>${title}</h3>
+                    <h2>${fullName}</h2>
+                    <h3>${family != 'None' && family != '' ? family : 'Unknown'}</h3>
+                    <h3>${title ? title : 'Unknown'}</h3>
                 </div>
                 <div class="stark-sigil-container">
                     <img class="stark-sigil" src="./assets/img/targaryenSigil.png" alt="House Stark Sigil" class="stark-sigil">
@@ -37,15 +37,15 @@ function createTargaryenCard({ firstName, lastName, imageUrl, title, family}) {
     `;
 }
 
-function createLannisterCard({ firstName, lastName, imageUrl, title, family}) {
+function createLannisterCard({ fullName, imageUrl, title, family}) {
     return `
-        <div class="card house-lannister">
+        <div id="house-lannister" class="card house-lannister">
             <img src="${imageUrl}" alt="Pinture of the character">
             <div class="stark-info">
                 <div class="stark-text">
-                    <h2>${firstName} ${lastName}</h2>
-                    <h3>${family}</h3>
-                    <h3>${title}</h3>
+                    <h2>${fullName}</h2>
+                    <h3>${family  != 'None' && family != '' ? family : 'Unknown'}</h3>
+                    <h3>${title ? title : 'Unknown'}</h3>
                 </div>
                 <div class="stark-sigil-container">
                     <img class="stark-sigil" src="./assets/img/lannisterSigil.png" alt="House Stark Sigil" class="stark-sigil">
@@ -90,28 +90,16 @@ async function fetchContinentsThroneJson() {
     }
 }
 
-async function displayContinentsThrone() {
-    const continentsSection = document.getElementById('throneContinentsSection');
-    const continentsData = await fetchUrlFromAPI(`https://thronesapi.com/api/v2/Continents`);
-    if (continentsData ) {
-        const continentsCards = continentsData.map(createContinentsCard).join('');
-        continentsSection.innerHTML = continentsCards;
-    } else {
-        continentsSection.innerHTML = '<p>No hemos podido entrar en Invernalia.</p>';
-    }
-}
 
-displayContinentsThrone();
-
-function createBaratheonCard({ firstName, lastName, imageUrl, title, family}) {
+function createBaratheonCard({ fullName, imageUrl, title, family}) {
     return `
-        <div class="card house-baratheon">
+        <div id="house-baratheon" class="card house-baratheon">
             <img src="${imageUrl}" alt="Pinture of the character">
             <div class="stark-info">
                 <div class="stark-text">
-                    <h2>${firstName} ${lastName}</h2>
-                    <h3>${family}</h3>
-                    <h3>${title}</h3>
+                    <h2>${fullName}</h2>
+                    <h3>${family  != 'None' && family != '' ? family : 'Unknown'}</h3>
+                    <h3>${title ? title : 'Unknown'}</h3>
                 </div>
                 <div class="stark-sigil-container">
                     <img class="stark-sigil" src="./assets/img/baratheonSigil.png" alt="House Stark Sigil" class="stark-sigil">
@@ -121,15 +109,15 @@ function createBaratheonCard({ firstName, lastName, imageUrl, title, family}) {
     `;
 }
 
-function createTyrellCard({ firstName, lastName, imageUrl, title, family}) {
+function createTyrellCard({ fullName, imageUrl, title, family}) {
     return `
-        <div class="card house-tyrell">
+        <div id="house-tyrell" class="card house-tyrell">
             <img src="${imageUrl}" alt="Pinture of the character">
             <div class="stark-info">
                 <div class="stark-text">
-                    <h2>${firstName} ${lastName}</h2>
-                    <h3>${family}</h3>
-                    <h3>${title}</h3>
+                    <h2>${fullName}</h2>
+                    <h3>${family != 'None' && family != '' ? family : 'Unknown'}</h3>
+                    <h3>${title ? title : 'Unknown'}</h3>
                 </div>
                 <div class="stark-sigil-container">
                     <img class="stark-sigil" src="./assets/img/houseTyrellSigil.png" alt="House Stark Sigil" class="stark-sigil">
@@ -139,15 +127,15 @@ function createTyrellCard({ firstName, lastName, imageUrl, title, family}) {
     `;
 }
 
-function createMormontCard({ firstName, lastName, imageUrl, title, family}) {
+function createMormontCard({ fullName, imageUrl, title, family}) {
     return `
-        <div class="card house-mormont">
+        <div id="house-mormont" class="card house-mormont">
             <img src="${imageUrl}" alt="Pinture of the character">
             <div class="stark-info">
                 <div class="stark-text">
-                    <h2>${firstName} ${lastName}</h2>
-                    <h3>${family}</h3>
-                    <h3>${title}</h3>
+                    <h2>${fullName}</h2>
+                    <h3>${family != 'None' && family != ''? family : 'Unknown'}</h3>
+                    <h3>${title ? title : 'Unknown'}</h3>
                 </div>
                 <div class="stark-sigil-container">
                     <img class="stark-sigil" src="./assets/img/houseMormontSigil.png" alt="House Stark Sigil" class="stark-sigil">
@@ -157,15 +145,15 @@ function createMormontCard({ firstName, lastName, imageUrl, title, family}) {
     `;
 }
 
-function createBoltonCard({ firstName, lastName, imageUrl, title, family}) {
+function createBoltonCard({ fullName, imageUrl, title, family}) {
     return `
-        <div class="card house-bolton">
+        <div id="house-bolton" class="card house-bolton">
             <img src="${imageUrl}" alt="Pinture of the character">
             <div class="stark-info">
                 <div class="stark-text">
-                    <h2>${firstName} ${lastName}</h2>
-                    <h3>${family}</h3>
-                    <h3>${title}</h3>
+                    <h2>${fullName}</h2>
+                    <h3>${family != 'None' && family != '' ? family : 'Unknown'}</h3>
+                    <h3>${title ? title : 'Unknown'}</h3>
                 </div>
                 <div class="stark-sigil-container">
                     <img class="stark-sigil" src="./assets/img/houseBoltonSigil.png" alt="House Stark Sigil" class="stark-sigil">
@@ -175,15 +163,15 @@ function createBoltonCard({ firstName, lastName, imageUrl, title, family}) {
     `;
 }
 
-function createGreyjoyCard({ firstName, lastName, imageUrl, title, family}) {
+function createGreyjoyCard({ fullName, imageUrl, title, family}) {
     return `
-        <div class="card house-greyjoy">
+        <div id="house-greyjoy" class="card house-greyjoy">
             <img src="${imageUrl}" alt="Pinture of the character">
             <div class="stark-info">
                 <div class="stark-text">
-                    <h2>${firstName} ${lastName}</h2>
-                    <h3>${family}</h3>
-                    <h3>${title}</h3>
+                    <h2>${fullName}</h2>
+                    <h3>${family != 'None' && family != '' ? family : 'Unknown'}</h3>
+                    <h3>${title ? title : 'Unknown'}</h3>
                 </div>
                 <div class="stark-sigil-container">
                     <img class="stark-sigil" src="./assets/img/greyjoySigil.png" alt="House Stark Sigil" class="stark-sigil">
@@ -193,15 +181,15 @@ function createGreyjoyCard({ firstName, lastName, imageUrl, title, family}) {
     `;
 }
 
-function createOthersCard({ firstName, lastName, imageUrl, title, family}) {
+function createOthersCard({ fullName, imageUrl, title, family}) {
     return `
-        <div class="card house-greyjoy">
+        <div id="house-Greyjoy" class="card house-greyjoy">
             <img src="${imageUrl}" alt="Pinture of the character">
             <div class="stark-info">
                 <div class="stark-text">
-                    <h2>${firstName} ${lastName}</h2>
-                    <h3>${family}</h3>
-                    <h3>${title}</h3>
+                    <h2>${fullName}</h2>
+                    <h3>${family != 'None' && family != '' ? family : 'Unknown'}</h3>
+                    <h3>${title ? title : 'Unknown'}</h3>
                 </div>
             </div>
         </div>
@@ -241,3 +229,22 @@ async function displayAllHousesThrone() {
 }
 
 displayAllHousesThrone();
+
+function createMapSection( nameList ) {
+    return `
+        <div class="map-container">
+            <h4 class="map-title">Map of the Known World</h4>
+                <img src="./assets/img/gameOfThronesMap.png" alt="Mapa de los continentes de Game of Thrones">
+                ${nameList.map(name => `<div class="continent ${name.toLowerCase()}">${name}</div>`).join('')}
+        </div>
+    `;
+}
+
+async function displayMapSection() {
+    const continentsSection = document.getElementById('continentsSection');
+    const nameList = await fetchContinentsThroneJson().then(data => data.map(continent => continent.name));
+    const mapSectionHTML = createMapSection(nameList);
+    continentsSection.innerHTML = mapSectionHTML;
+}
+
+displayMapSection();
