@@ -10,10 +10,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: radial-gradient(circle at top,
-            #2a2a30 0,
-            #050509 40%,
-            #000000 100%);
+    background:#000000;
     color: #ffffff;
 }
 
@@ -192,61 +189,14 @@ section {
     border-color: #4caf50;
 }
 
-/* ===========================================
-    Ajustes globales para el header / navbar
-   =========================================== */
-
-/* Altura total del header/logo */
-:root {
-    --brand-header-height: 130px;
+.image-container {
+    text-align: center;
+    margin-bottom: 20px;
+    max-width: 100%;
 }
 
-/* Reservamos espacio arriba para el header fijo. 
-   Con esto, las tarjetas no quedan ocultas al hacer scroll */
-body {
-    margin: 0;
-    padding-top: var(--brand-header-height);
-}
-
-/* Header fijo en la parte superior */
-.brand-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: var(--brand-header-height);
-    z-index: 1000;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    /* Estética oscura y degradado */
-    background: linear-gradient(to bottom,
-            rgba(0, 0, 0, 0.97),
-            rgba(0, 0, 0, 0.88));
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.6);
-}
-
-/* El enlace que envuelve el logo no sobrescribe estilos de color */
-.brand-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    padding: 0 16px;
-    text-decoration: none;
-    color: inherit;
-    /* hereda el color del contenedor, evita el azul */
-}
-
-/* Tamaño y proporción del logo */
-.brand-logo {
-    height: calc(var(--brand-header-height) - 40px);
-    width: auto;
-    max-width: min(720px, 92vw);
-    object-fit: contain;
-    opacity: 0.98;
-    filter: drop-shadow(0 10px 22px rgba(0, 0, 0, 0.8));
+.image-container .image img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 100%;
 }
