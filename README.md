@@ -80,7 +80,8 @@ Renderizado dinámico de personajes
    --main
 
    --footer
-   
+
+   ![IMAGEN LOGO](images/Cards.gif)
 
 ## 📁 Estructura del proyecto
 
