@@ -103,7 +103,8 @@ GameOfthrones.Api.G3/
 └── assets/
     └── images/
 
- ![IMAGEN MAPA](gameOfThronesMap.png)
+ <img width="2826" height="1842" alt="gameOfThronesMap" src="https://github.com/user-attachments/assets/bce9f0fc-09dd-4f86-a3d5-3bb79b22ddc5" />
+
 
 La estructura del proyecto está diseñada para facilitar la escalabilidad, el mantenimiento del código y el trabajo colaborativo en equipo.
 
@@ -111,7 +112,7 @@ La estructura del proyecto está diseñada para facilitar la escalabilidad, el m
 
 1️⃣ Clonar el repositorio:
 
-git clone https://github.com/Adrian-1986/GameOfthrones.Api.G3.git
+git clone https://adrian-1986.github.io/GameOfthrones.Api.G3/
 
 2️⃣ Acceder al directorio del proyecto:
 
