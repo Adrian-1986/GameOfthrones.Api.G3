@@ -103,7 +103,7 @@ GameOfthrones.Api.G3/
 └── assets/
     └── images/
 
- ![IMAGEN LOGO](gameOfThrones.png)
+ ![IMAGEN MAPA](gameOfThronesMap.png)
 
 La estructura del proyecto está diseñada para facilitar la escalabilidad, el mantenimiento del código y el trabajo colaborativo en equipo.
 
